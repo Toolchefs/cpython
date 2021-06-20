@@ -66,7 +66,7 @@ if "%~1"=="-p" (set platf=%2) & shift & shift & goto CheckOpts
 if "%~1"=="-r" (set target=Rebuild) & shift & goto CheckOpts
 if "%~1"=="-t" (set target=%2) & shift & shift & goto CheckOpts
 if "%~1"=="-d" (set conf=Debug) & shift & goto CheckOpts
-if "%~1"=="-m" (set parallel=/m) & shift & goto CheckOpts
+if "%~1"=="-m" (set parallel=/MP) & shift & goto CheckOpts
 if "%~1"=="-M" (set parallel=) & shift & goto CheckOpts
 if "%~1"=="-v" (set verbose=/v:n) & shift & goto CheckOpts
 if "%~1"=="-k" (set kill=true) & shift & goto CheckOpts
